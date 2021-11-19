@@ -6,6 +6,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   styleUrls: ['./first.component.scss']
 })
 export class FirstComponent implements OnInit, OnDestroy {
+  name = 'Daniel';
 
   constructor() { }
   ngOnDestroy(): void {

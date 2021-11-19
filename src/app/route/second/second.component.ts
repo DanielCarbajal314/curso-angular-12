@@ -9,6 +9,8 @@ export class SecondComponent implements OnInit {
   counter = 100;
   colorIndex = 0;
   colors = ['red','green','blue','orange','pink'];
+  currentDate = new Date();
+  salute = "Hola Mundo Desde Sunat Esto Es Un Pipe"
 
   constructor() { }
 
@@ -31,5 +33,4 @@ export class SecondComponent implements OnInit {
   changeColor(){
     this.colorIndex++;
   }
-
 }

@@ -1,0 +1,12 @@
+<label [ngClass]="nameIsNotValid ? 'error' : '' ">Nombre Completo</label>
+<input type="text" [(ngModel)]="name">
+<p class="error" *ngIf="nameIsNotValid"> El Nombre Tiene que tener al menos 3 caracteres </p>
+
+<button (click)="clean()">Borrar</button>
+
+
+<h1>Hola {{name}}</h1>
+<h2>Las Palabras que forman tu sombre son</h2>
+<ul>
+    <li *ngFor="let word of name.split(' '); index as i" >{{i}} ) {{word}}</li>
+</ul>

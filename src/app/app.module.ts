@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './route/first/first.component';
 import { SecondComponent } from './route/second/second.component';
 import { ReplaceSpacesPipe } from './replace-spaces.pipe';
+import { DirectivesComponent } from './route/directives/directives.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     SecondComponent,
-    ReplaceSpacesPipe
+    ReplaceSpacesPipe,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

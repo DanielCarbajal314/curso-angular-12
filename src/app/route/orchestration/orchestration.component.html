@@ -1,0 +1,10 @@
+<square-title></square-title>
+<div [style]="squareClickStyle">
+    <h1>{{ clickedSquare?.text }}</h1>
+
+    <square *ngFor="let square of squareArray" 
+        [square]="square"
+        (squareClicked)="onSquareClicked($event)"
+        ></square>
+</div>
+

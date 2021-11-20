@@ -9,6 +9,9 @@ import { ReplaceSpacesPipe } from './replace-spaces.pipe';
 import { DirectivesComponent } from './route/directives/directives.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveExerciseComponent } from './route/directive-exercise/directive-exercise.component';
+import { OrchestrationComponent } from './route/orchestration/orchestration.component';
+import { SsquareComponent } from './route/orchestration/ssquare/ssquare.component';
+import { SquareTitleComponent } from './route/orchestration/square-title/square-title.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { DirectiveExerciseComponent } from './route/directive-exercise/directive
     SecondComponent,
     ReplaceSpacesPipe,
     DirectivesComponent,
-    DirectiveExerciseComponent
+    DirectiveExerciseComponent,
+    OrchestrationComponent,
+    SsquareComponent,
+    SquareTitleComponent
   ],
   imports: [
     BrowserModule,

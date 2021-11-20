@@ -1,0 +1,18 @@
+<label>Estas Casad@ ? </label>
+<input [(ngModel)]="isMarried" type="checkbox">
+<div *ngIf="isMarried">
+  <label>Nombre del Conyuge</label>
+  <input type="text" [(ngModel)]="couplesName">
+  <h3> Estas Casado con {{ couplesName }}</h3>
+</div>
+
+<div>
+  <label>Nueva Tarea</label>
+  <input [(ngModel)]="taskName">
+  <button (click)="addNewTask()">Agregar Tarea</button>
+</div>
+<div>
+  <input type="text" *ngFor="let value of myTasks, index as i" [(ngModel)]="myTasks[i]">
+</div>
+
+<h4>{{ myTasks | json }}</h4>

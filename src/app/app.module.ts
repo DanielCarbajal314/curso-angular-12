@@ -8,6 +8,7 @@ import { SecondComponent } from './route/second/second.component';
 import { ReplaceSpacesPipe } from './replace-spaces.pipe';
 import { DirectivesComponent } from './route/directives/directives.component';
 import { FormsModule } from '@angular/forms';
+import { DirectiveExerciseComponent } from './route/directive-exercise/directive-exercise.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     FirstComponent,
     SecondComponent,
     ReplaceSpacesPipe,
-    DirectivesComponent
+    DirectivesComponent,
+    DirectiveExerciseComponent
   ],
   imports: [
     BrowserModule,

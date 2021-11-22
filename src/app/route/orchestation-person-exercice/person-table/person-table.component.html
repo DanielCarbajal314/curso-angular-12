@@ -1,0 +1,14 @@
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Fecha De Nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let person of people">
+            <th>{{ person.name }}</th>
+            <th>{{ person.birthday }}</th>
+        </tr>
+    </tbody>
+</table>

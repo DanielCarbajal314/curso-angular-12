@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { DirectiveExerciseComponent } from './route/directive-exercise/directive-exercise.component';
 import { DirectivesComponent } from './route/directives/directives.component';
 import { FirstComponent } from './route/first/first.component';
+import { OrchestationPersonExerciceComponent } from './route/orchestation-person-exercice/orchestation-person-exercice.component';
 import { OrchestrationComponent } from './route/orchestration/orchestration.component';
 import { SecondComponent } from './route/second/second.component';
 
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'directive', component: DirectivesComponent },
   { path: 'directive-exercise', component: DirectiveExerciseComponent },
   { path: 'orchestation', component: OrchestrationComponent },
+  { path: 'orchestation-person', component: OrchestationPersonExerciceComponent }, 
 ];
 
 @NgModule({

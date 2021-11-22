@@ -12,6 +12,9 @@ import { DirectiveExerciseComponent } from './route/directive-exercise/directive
 import { OrchestrationComponent } from './route/orchestration/orchestration.component';
 import { SsquareComponent } from './route/orchestration/ssquare/ssquare.component';
 import { SquareTitleComponent } from './route/orchestration/square-title/square-title.component';
+import { OrchestationPersonExerciceComponent } from './route/orchestation-person-exercice/orchestation-person-exercice.component';
+import { PersonFormComponent } from './route/orchestation-person-exercice/person-form/person-form.component';
+import { PersonTableComponent } from './route/orchestation-person-exercice/person-table/person-table.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { SquareTitleComponent } from './route/orchestration/square-title/square-
     DirectiveExerciseComponent,
     OrchestrationComponent,
     SsquareComponent,
-    SquareTitleComponent
+    SquareTitleComponent,
+    OrchestationPersonExerciceComponent,
+    PersonFormComponent,
+    PersonTableComponent
   ],
   imports: [
     BrowserModule,

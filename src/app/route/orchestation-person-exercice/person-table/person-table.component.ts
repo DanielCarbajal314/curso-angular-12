@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Person } from '../model/person.model';
+import { PersonService } from '../services/person.service';
 
 @Component({
   selector: 'person-table',
@@ -9,11 +10,12 @@ import { Person } from '../model/person.model';
 export class PersonTableComponent implements OnInit {
   people: Person[] = [];
   @Output() peopleCountChange = new EventEmitter<number>();
+
   get peopleCount(){
     return this.people.length;
   }
 
-  constructor() { }
+  constructor(public personService: PersonService) { }
 
   ngOnInit(): void {
   }

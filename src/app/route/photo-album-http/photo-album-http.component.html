@@ -1,1 +1,4 @@
-<p>photo-album-http works!</p>
+<div *ngFor = "let photo of photos">
+    <h3>{{ photo.title }}</h3>
+    <img [src]="photo.thumbnailUrl"/>
+</div>

@@ -15,6 +15,8 @@ import { SquareTitleComponent } from './route/orchestration/square-title/square-
 import { OrchestationPersonExerciceComponent } from './route/orchestation-person-exercice/orchestation-person-exercice.component';
 import { PersonFormComponent } from './route/orchestation-person-exercice/person-form/person-form.component';
 import { PersonTableComponent } from './route/orchestation-person-exercice/person-table/person-table.component';
+import { PhotoAlbumHttpComponent } from './route/photo-album-http/photo-album-http.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,14 @@ import { PersonTableComponent } from './route/orchestation-person-exercice/perso
     SquareTitleComponent,
     OrchestationPersonExerciceComponent,
     PersonFormComponent,
-    PersonTableComponent
+    PersonTableComponent,
+    PhotoAlbumHttpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

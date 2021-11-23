@@ -17,6 +17,9 @@ import { PersonFormComponent } from './route/orchestation-person-exercice/person
 import { PersonTableComponent } from './route/orchestation-person-exercice/person-table/person-table.component';
 import { PhotoAlbumHttpComponent } from './route/photo-album-http/photo-album-http.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TaskManagementComponent } from './route/task-management/task-management.component';
+import { TaskFormComponent } from './route/task-management/task-form/task-form.component';
+import { TaskTableComponent } from './route/task-management/task-table/task-table.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,10 @@ import { HttpClientModule } from '@angular/common/http';
     OrchestationPersonExerciceComponent,
     PersonFormComponent,
     PersonTableComponent,
-    PhotoAlbumHttpComponent
+    PhotoAlbumHttpComponent,
+    TaskManagementComponent,
+    TaskFormComponent,
+    TaskTableComponent
   ],
   imports: [
     BrowserModule,

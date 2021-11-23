@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <tr>
+            <th>Tarea</th>
+            <th>Fecha</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let task of tasks">
+            <th>{{ task.description }}</th>
+            <th>{{ task.date | date: 'short' }}</th>
+            <th>
+                <button (click)="delete(task)">Borrar</button>
+            </th>
+        </tr>
+    </tbody>
+</table>

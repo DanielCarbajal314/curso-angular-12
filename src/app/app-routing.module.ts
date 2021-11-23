@@ -7,6 +7,7 @@ import { OrchestationPersonExerciceComponent } from './route/orchestation-person
 import { OrchestrationComponent } from './route/orchestration/orchestration.component';
 import { PhotoAlbumHttpComponent } from './route/photo-album-http/photo-album-http.component';
 import { SecondComponent } from './route/second/second.component';
+import { TaskManagementComponent } from './route/task-management/task-management.component';
 
 const routes: Routes = [
   { path: '', component: FirstComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'orchestation', component: OrchestrationComponent },
   { path: 'orchestation-person', component: OrchestationPersonExerciceComponent }, 
   { path: 'photo-album-http', component: PhotoAlbumHttpComponent }, 
+  { path: 'tasks-http', component: TaskManagementComponent }, 
 ];
 
 @NgModule({

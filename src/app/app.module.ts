@@ -21,6 +21,19 @@ import { TaskManagementComponent } from './route/task-management/task-management
 import { TaskFormComponent } from './route/task-management/task-form/task-form.component';
 import { TaskTableComponent } from './route/task-management/task-table/task-table.component';
 import { ReactiveFormExampleComponent } from './route/reactive-form-example/reactive-form-example.component';
+import { AngularMaterialFormComponent } from './route/angular-material-form/angular-material-form.component';
+import { FormExampleComponent } from './route/angular-material-form/form-example/form-example.component';
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatInputModule} from '@angular/material/input'; 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'; 
+import {A11yModule} from '@angular/cdk/a11y';
+import {ClipboardModule} from '@angular/cdk/clipboard';
+import {DragDropModule} from '@angular/cdk/drag-drop';
+import {CdkStepperModule} from '@angular/cdk/stepper';
+import {CdkTableModule} from '@angular/cdk/table';
+import {CdkTreeModule} from '@angular/cdk/tree';
+
 
 @NgModule({
   declarations: [
@@ -40,14 +53,27 @@ import { ReactiveFormExampleComponent } from './route/reactive-form-example/reac
     TaskManagementComponent,
     TaskFormComponent,
     TaskTableComponent,
-    ReactiveFormExampleComponent
+    ReactiveFormExampleComponent,
+    AngularMaterialFormComponent,
+    FormExampleComponent
   ],
   imports: [
+    ClipboardModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule,
+    DragDropModule,
+    A11yModule,
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatIconModule,
+    MatInputModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

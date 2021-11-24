@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AngularMaterialFormComponent } from './route/angular-material-form/angular-material-form.component';
 import { DirectiveExerciseComponent } from './route/directive-exercise/directive-exercise.component';
 import { DirectivesComponent } from './route/directives/directives.component';
 import { FirstComponent } from './route/first/first.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   { path: 'photo-album-http', component: PhotoAlbumHttpComponent }, 
   { path: 'tasks-http', component: TaskManagementComponent }, 
   { path: 'reactive-form', component: ReactiveFormExampleComponent }, 
+  { path: 'angular-material-example', component: AngularMaterialFormComponent }, 
 ];
 
 @NgModule({

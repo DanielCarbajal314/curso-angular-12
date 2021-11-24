@@ -1,0 +1,51 @@
+<div>
+    <label [style]="errorStyle">Nombre</label>
+    <input type="text" [formControl]="name" />
+    <p class="error" *ngIf="!name.valid && !name.pristine"> El nombre debe ser al menos de 4 caracters </p>
+    <h3>{{name.valid}}</h3>
+</div>
+
+<h1> FORM GROUP </h1>
+<div>
+    <form [formGroup]="personForm">
+        <div>
+            <label>Nombre</label>
+            <input type="text" formControlName="name" />
+        </div>
+        <div>
+            <label>Edad</label>
+            <input type="text" formControlName="age" />
+        </div>
+        <div>
+            <label>Hobbies</label>
+            <div *ngFor="let hobby of hobbies.controls">
+                <input type="text" [formControl]="hobby">
+            </div>    
+            <button (click)="addHobby()">Agregar Hobbie</button>
+        </div>
+    </form>
+    <h3> {{ personForm.value | json }}</h3>
+</div>
+
+<h1> FORM BUILDER </h1>
+<div>
+    <form [formGroup]="personFormWithBuilder">
+        <div>
+            <label>Nombre</label>
+            <input type="text" formControlName="name" />
+        </div>
+        <div>
+            <label>Edad</label>
+            <input type="text" formControlName="age" />
+        </div>
+        <div>
+            <label>Hobbies</label>
+            <div *ngFor="let hobby of personFormWithBuilder?.get('hobbies').controls">
+                <input type="text" [formControl]="hobby">
+            </div>    
+            <button (click)="addHobbyWithBuilder()">Agregar Hobbie</button>
+        </div>
+    </form>
+    <h3> {{ personFormWithBuilder?.value | json }}</h3>
+    <button [disabled]="!personFormWithBuilder?.valid">GUARDAR</button>
+</div>

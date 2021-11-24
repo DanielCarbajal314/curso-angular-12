@@ -6,6 +6,7 @@ import { FirstComponent } from './route/first/first.component';
 import { OrchestationPersonExerciceComponent } from './route/orchestation-person-exercice/orchestation-person-exercice.component';
 import { OrchestrationComponent } from './route/orchestration/orchestration.component';
 import { PhotoAlbumHttpComponent } from './route/photo-album-http/photo-album-http.component';
+import { ReactiveFormExampleComponent } from './route/reactive-form-example/reactive-form-example.component';
 import { SecondComponent } from './route/second/second.component';
 import { TaskManagementComponent } from './route/task-management/task-management.component';
 
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'orchestation-person', component: OrchestationPersonExerciceComponent }, 
   { path: 'photo-album-http', component: PhotoAlbumHttpComponent }, 
   { path: 'tasks-http', component: TaskManagementComponent }, 
+  { path: 'reactive-form', component: ReactiveFormExampleComponent }, 
 ];
 
 @NgModule({

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { PersonDialogComponent } from './person-dialog/person-dialog.component';
 
 @Component({
   selector: 'app-angular-material-form',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularMaterialFormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
+  }
+
+  registerNewPerson(){
+    this.dialog.open(PersonDialogComponent, { width: '50%'})
   }
 
 }

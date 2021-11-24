@@ -33,7 +33,15 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import {CdkStepperModule} from '@angular/cdk/stepper';
 import {CdkTableModule} from '@angular/cdk/table';
 import {CdkTreeModule} from '@angular/cdk/tree';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
+import {MatCheckboxModule} from '@angular/material/checkbox'; 
+import {MatSelectModule} from '@angular/material/select'; 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatButtonModule} from '@angular/material/button'; 
+import { PersonDialogComponent } from './route/angular-material-form/person-dialog/person-dialog.component';
+import {MatDialogModule} from '@angular/material/dialog'; 
 
 @NgModule({
   declarations: [
@@ -55,7 +63,8 @@ import {CdkTreeModule} from '@angular/cdk/tree';
     TaskTableComponent,
     ReactiveFormExampleComponent,
     AngularMaterialFormComponent,
-    FormExampleComponent
+    FormExampleComponent,
+    PersonDialogComponent
   ],
   imports: [
     ClipboardModule,
@@ -72,8 +81,15 @@ import {CdkTreeModule} from '@angular/cdk/tree';
     ReactiveFormsModule,
     MatFormFieldModule,
     MatIconModule,
-    MatInputModule
-    
+    MatInputModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSlideToggleModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    FlexLayoutModule,
+    MatDialogModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
